@@ -5,5 +5,5 @@
     // Used when SWEW-test maintainers are running SWEW-test tests.
     require_once __DIR__ . '/../src/swew-test.phar';
 
-    \Swew\Test\TestMaster::runTest();
+    // \Swew\Test\TestMaster::runTest();
 })();
