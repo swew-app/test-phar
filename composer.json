@@ -1,0 +1,47 @@
+{
+    "name": "swew/test.phar",
+    "description": "A test framework that is designed to fix the fatal flaw of other test frameworks.",
+    "type": "library",
+    "license": "MIT",
+    "keywords": [
+        "TDD",
+        "testing",
+        "fast",
+        "lightweight",
+        "informative interface"
+    ],
+    "authors": [
+        {
+            "name": "AVIL13",
+            "email": "avil@swew.app"
+        }
+    ],
+    "bin": [
+        "bin/t"
+    ],
+    "autoload": {
+        "files": [
+            "src/swew-test.phar"
+        ],
+        "exclude-from-classmap": [
+            "spec",
+            "/Tests/",
+            "/test/",
+            "/tests/"
+        ]
+    },
+    "archive": {
+        "exclude": [
+            "tests",
+            "swew.json"
+        ]
+    },
+    "prefer-stable": true,
+    "require": {
+        "php": ">=8.1",
+        "ext-json": "*"
+    },
+    "scripts": {
+        "build": "./box.phar compile --no-parallel"
+    }
+}
