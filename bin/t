@@ -1,0 +1,9 @@
+#!/usr/bin/env php
+<?php declare(strict_types=1);
+
+(static function () {
+    // Used when SWEW-test maintainers are running SWEW-test tests.
+    require_once __DIR__ . '/../src/swew-test.phar';
+
+    \Swew\Test\TestMaster::runTest();
+})();
