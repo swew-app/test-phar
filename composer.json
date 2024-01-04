@@ -17,11 +17,10 @@
         }
     ],
     "bin": [
-        "t"
+        "bin/t"
     ],
     "autoload": {
         "files": [
-            "bin/t",
             "bin/swew-test.phar"
         ],
         "exclude-from-classmap": [
