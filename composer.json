@@ -17,12 +17,10 @@
         }
     ],
     "bin": [
-        "bin/t"
+        "t",
+        "swew-test.phar"
     ],
     "autoload": {
-        "files": [
-            "bin/swew-test.phar"
-        ],
         "exclude-from-classmap": [
             "spec",
             "/Tests/",
@@ -45,6 +43,6 @@
     },
     "scripts": {
         "build": "./box.phar compile --no-parallel",
-        "test": "./bin/t"
+        "test": "./t"
     }
 }

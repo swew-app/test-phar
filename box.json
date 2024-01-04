@@ -1,7 +1,7 @@
 {
     "chmod": "0755",
     "base-path": "../swew-test/",
-    "output": "../test.phar/bin/swew-test.phar",
+    "output": "../test.phar/swew-test.phar",
     "main": "src/run.php",
     "directories": [
         "src/"
@@ -20,9 +20,6 @@
                 "vendor-bin"
             ],
             "in": "./vendor/swew"
-        },
-        {
-            "in": "./vendor/composer"
         }
     ]
 }
