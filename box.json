@@ -1,0 +1,28 @@
+{
+    "chmod": "0755",
+    "base-path": "../swew-test/",
+    "output": "../test.phar/bin/swew-test.phar",
+    "main": "src/run.php",
+    "directories": [
+        "src/"
+    ],
+    "finder": [
+        {
+            "notName": "/LICENSE|.*\\.md|.*\\.json|.*\\.xml|.*\\.dist|Makefile|composer\\.json|composer\\.lock/",
+            "exclude": [
+                "bin",
+                "assets",
+                "doc",
+                "test",
+                "test_old",
+                "tests",
+                "Tests",
+                "vendor-bin"
+            ],
+            "in": "./vendor/swew"
+        },
+        {
+            "in": "./vendor/composer"
+        }
+    ]
+}

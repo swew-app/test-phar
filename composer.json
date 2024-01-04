@@ -21,7 +21,7 @@
     ],
     "autoload": {
         "files": [
-            "src/swew-test.phar"
+            "bin/swew-test.phar"
         ],
         "exclude-from-classmap": [
             "spec",
@@ -44,6 +44,7 @@
         "ext-json": "*"
     },
     "scripts": {
-        "build": "./box.phar compile --no-parallel"
+        "build": "./box.phar compile --no-parallel",
+        "test": "./bin/t"
     }
 }
