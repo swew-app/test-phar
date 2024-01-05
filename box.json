@@ -3,6 +3,11 @@
     "base-path": "../swew-test/",
     "output": "../test.phar/swew-test.phar",
     "main": "src/run.php",
+    "git-commit-short": "git_commit_short",
+    "stub": true,
+    "compactors": [
+        "KevinGH\\Box\\Compactor\\PhpScoper"
+    ],
     "directories": [
         "src/"
     ],
