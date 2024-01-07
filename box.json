@@ -1,6 +1,6 @@
 {
     "chmod": "0755",
-    "base-path": "../swew-test/",
+    "base-path": "../test/",
     "output": "../test.phar/swew-test.phar",
     "main": "src/run.php",
     "git-commit-short": "git_commit_short",
